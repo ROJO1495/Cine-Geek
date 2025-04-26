@@ -88,6 +88,13 @@ footer {
     margin-top: 60px;
 }
 
+#dulceria h1,
+#dulceria h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #002b7f;
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
