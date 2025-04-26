@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    backdrop-filter: blur(10px);
+}
+
+#inicio {
+    background-color: #ffffff;
+    color: #121212;
+    min-height: 100vh;
+    padding: 80px 5vw;
+}
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/banner.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    background-size: cover;
+}
+
+.banner-logo {
+    width: 100px !important;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffffff;
+    color: #121212;
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #ff1744, #ff6d00);
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ff6d00, #ff1744);
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+#estrenos-hoy {
+    background: none;
+    padding: 40px 20px;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 60px;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

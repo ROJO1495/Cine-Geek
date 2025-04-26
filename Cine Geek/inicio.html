@@ -1,0 +1,131 @@
+<!-- Sección Inicio -->
+<section id="inicio" class="container-fluid mt-5 pt-5">
+
+    <!-- Título general -->
+    <h2 class="text-center mb-5">
+        <i class="bi bi-film me-2"></i> Estrenos de Hoy
+    </h2>
+
+    <!-- Contenedor de tarjetas -->
+    <div id="estrenos-hoy" class="container">
+        <div class="row justify-content-center g-4">
+            <!-- Película 1 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/elcontador.jpg" class="card-img-top" alt="El contador 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">El Contador 2</h5>
+                        <p class="card-text">9:00 AM - 12:15MD - 3:30PM - 6:00 PM</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContador2">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Película 2 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/starwars.jpg" class="card-img-top" alt="Star Wars 3: Venganza Sith">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Star Wars 3: Venganza Sith</h5>
+                        <p class="card-text">8:00 AM - 11:20AM - 2:00PM - 5:00 PM</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStarWars3">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Película 3 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/pecadores.jpg" class="card-img-top" alt="Pecadores">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pecadores</h5>
+                        <p class="card-text">8:30 AM - 11:00AM - 2:45PM - 7:00 PM</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPecadores">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Película 4 -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/karatekidleyendas.jpg" class="card-img-top" alt="Karate Kid Leyendas">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Karate Kid Leyendas</h5>
+                        <p class="card-text">10:30 AM - 2:45PM - 6:00PM - 9:00 PM</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKarateKid">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modales -->
+    <div class="modal fade" id="modalContador2" tabindex="-1" aria-labelledby="modalContador2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalContador2Label">El Contador 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Género:</strong> Acción / Thriller</p>
+                    <p><strong>Duración:</strong> 2h 5min</p>
+                    <p><strong>Clasificación:</strong> B15</p>
+                    <p><strong>Sinopsis:</strong> Christian Wolff regresa enfrentando una nueva conspiración de traición y corrupción mientras lucha por proteger a su familia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalStarWars3" tabindex="-1" aria-labelledby="modalStarWars3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStarWars3Label">Star Wars 3: Venganza Sith</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Género:</strong> Ciencia ficción / Acción</p>
+                    <p><strong>Duración:</strong> 2h 20min</p>
+                    <p><strong>Clasificación:</strong> B</p>
+                    <p><strong>Sinopsis:</strong> La caída de Anakin Skywalker hacia el lado oscuro y el ascenso del Imperio Galáctico culminan en una de las batallas más épicas de la saga.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPecadores" tabindex="-1" aria-labelledby="modalPecadoresLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPecadoresLabel">Pecadores</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Género:</strong> Drama / Suspenso</p>
+                    <p><strong>Duración:</strong> 1h 55min</p>
+                    <p><strong>Clasificación:</strong> C</p>
+                    <p><strong>Sinopsis:</strong> Una intensa historia sobre la redención y los secretos ocultos de una pequeña comunidad religiosa en conflicto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalKarateKid" tabindex="-1" aria-labelledby="modalKarateKidLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalKarateKidLabel">Karate Kid Leyendas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Género:</strong> Aventura / Deporte</p>
+                    <p><strong>Duración:</strong> 2h 10min</p>
+                    <p><strong>Clasificación:</strong> A</p>
+                    <p><strong>Sinopsis:</strong> Una nueva generación de luchadores aprende sobre disciplina, honor y valor, mientras enfrenta nuevos desafíos en torneos de karate internacionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
