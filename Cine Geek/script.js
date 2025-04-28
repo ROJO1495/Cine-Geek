@@ -51,6 +51,25 @@ function initializeCarousel() {
             e.stopPropagation();
         });
     });
+
+// --- NUEVO: Actualizar fecha en "Estrenos de Hoy" 
+const fechaElemento = document.getElementById('fecha-estrenos');
+if (fechaElemento) {
+    const hoy = new Date();
+
+    const opcionesDia = { weekday: 'long' };
+    const opcionesFecha = { year: 'numeric', month: 'long', day: 'numeric' };
+
+    let diaSemana = hoy.toLocaleDateString('es-ES', opcionesDia);
+    const fechaCompleta = hoy.toLocaleDateString('es-ES', opcionesFecha);
+
+    // Convertir primera letra del día en mayúscula
+    diaSemana = diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1);
+
+    fechaElemento.textContent = `${diaSemana}, ${fechaCompleta}`;
+
+    fechaElemento.classList.add('fade-in');
+}
 }
 
 // --- NUEVO ---

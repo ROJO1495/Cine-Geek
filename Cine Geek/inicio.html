@@ -6,7 +6,7 @@
             <i class="bi bi-film"></i> 🎬
         </div>
         <h2 class="titulo-estrenos">
-            Estrenos de Hoy
+            Estrenos de Hoy: <span id="fecha-estrenos"></span>
         </h2>
     </div>
 
@@ -22,8 +22,9 @@
                             <img src="images/elcontador.jpg" class="card-img-top" alt="El contador 2">
                             <div class="card-body">
                                 <h5 class="card-title">El Contador 2</h5>
-                                <p class="card-text">Género - 6:00 PM</p>
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalContador2">Ver Detalles</a>
+                                <p class="card-text">10:00 AM - 01:00 PM - 6:00 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalContador2">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -34,8 +35,9 @@
                             <img src="images/starwars.jpg" class="card-img-top" alt="Star Wars 3: Venganza Sith">
                             <div class="card-body">
                                 <h5 class="card-title">Star Wars 3: Venganza Sith</h5>
-                                <p class="card-text">Género - 8:30 PM</p>
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalStarWars3">Ver Detalles</a>
+                                <p class="card-text">09:00 AM - 12:00 MD - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalStarWars3">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -46,8 +48,9 @@
                             <img src="images/pecadores.jpg" class="card-img-top" alt="Pecadores">
                             <div class="card-body">
                                 <h5 class="card-title">Pecadores</h5>
-                                <p class="card-text">Género - 8:30 PM</p>
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPecadores">Ver Detalles</a>
+                                <p class="card-text">11:00 AM - 03:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalPecadores">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -64,8 +67,36 @@
                             <img src="images/karatekidleyendas.jpg" class="card-img-top" alt="Karate Kid Leyendas">
                             <div class="card-body">
                                 <h5 class="card-title">Karate Kid Leyendas</h5>
-                                <p class="card-text">Género - 8:30 PM</p>
-                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalKarateKid">Ver Detalles</a>
+                                <p class="card-text">10:00 AM - 02:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalKarateKid">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quinta Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/comunidaddiabolica.jpg" class="card-img-top" alt="Comunidad diabólica">
+                            <div class="card-body">
+                                <h5 class="card-title">Comunidad diabólica</h5>
+                                <p class="card-text">10:30 AM - 04:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalcomunidaddiabolica">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sexta Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/minecraftpelicula.jpg" class="card-img-top"
+                                alt="Una película de Minecraft">
+                            <div class="card-body">
+                                <h5 class="card-title">Una película de Minecraft</h5>
+                                <p class="card-text">08:00 AM - 11:00 AM - 03:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalminecraftpelicula">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
@@ -159,6 +190,52 @@
                 <p><strong>Clasificación:</strong> A</p>
                 <p><strong>Sinopsis:</strong> Una nueva generación de luchadores aprende sobre disciplina, honor y
                     valor, mientras enfrenta nuevos desafíos en torneos de karate internacionales.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalcomunidaddiabolica" tabindex="-1" aria-labelledby="modalcomunidaddiabolicaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalcomunidaddiabolica">Comunidad diabólica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Género:</strong> Suspenso</p>
+                <p><strong>Duración:</strong> 1h 39min</p>
+                <p><strong>Clasificación:</strong> B15</p>
+                <p><strong>Sinopsis:</strong> El cadete de West Point, Edgar Allan Poe, y otros cuatro cadetes en un
+                    ejercicio de entrenamiento en el norte del estado de Nueva York, son atraídos por un espantoso
+                    descubrimiento a una comunidad olvidada.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalminecraftpelicula" tabindex="-1" aria-labelledby="modalminecraftpeliculaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalminecraftpelicula">Una película de Minecraft</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Género:</strong> Aventura</p>
+                <p><strong>Duración:</strong> 1h 41min</p>
+                <p><strong>Clasificación:</strong> A</p>
+                <p><strong>Sinopsis:</strong> ¡Bienvenido al mundo de Minecraft, donde la creatividad no solo te ayuda a
+                    construir, sino que es esencial para sobrevivir! Cuatro inadaptados, Garrett “El Recolector”
+                    Garrison (Momoa), Henry (Hansen), Natalie (Myers) y Dawn (Brooks), se encuentran lidiando con
+                    problemas cotidianos cuando, de repente, son arrastrados a través de un portal misterioso hacia el
+                    Overworld: una extraña tierra cúbica que se nutre de la imaginación. Para regresar a casa, deberán
+                    dominar este mundo (y protegerlo de criaturas malignas como Piglins y Zombis) mientras emprenden una
+                    mágica aventura con un experto constructor, Steve (Black). Juntos, su aventura los desafiará a ser
+                    valientes y a reconectar con las cualidades que los hacen creativamente únicos, habilidades
+                    esenciales para prosperar en el mundo real.</p>
             </div>
         </div>
     </div>

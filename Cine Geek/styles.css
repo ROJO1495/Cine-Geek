@@ -185,6 +185,16 @@ footer {
     animation: brilloSuave 3s infinite alternate;
 }
 
+/* Animacion de aparicion suave para la fecha de Estrenos de Hoy */
+#fecha-estrenos {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+#fecha-estrenos.fade-in {
+    opacity: 1;
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
