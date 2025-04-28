@@ -157,12 +157,13 @@ footer {
 }
 
 .titulo-estrenos {
+    margin-top: 15px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
+    font-weight: bold;
+    font-size: 2rem;
     color: #010918; 
     margin-bottom: 30px;
-    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .titulo-estrenos-wrapper {
