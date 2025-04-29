@@ -218,3 +218,19 @@ footer {
         box-shadow: 0 0 10px #ffd700, 0 0 20px #ffa500;
     }
 }
+
+.search-input {
+
+    margin-top: 70px;
+    background-color: #212121;
+}
+
+.position-data {
+    width: 100%;
+}
+
+.history {
+
+    margin-top: 70px;
+    text-align: justify;
+}
