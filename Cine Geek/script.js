@@ -70,6 +70,17 @@ if (fechaElemento) {
 
     fechaElemento.classList.add('fade-in');
 }
+    // --- NUEVO: Detener video al cerrar modal
+    const modales = document.querySelectorAll('.modal');
+    modales.forEach(modal => {
+        modal.addEventListener('hidden.bs.modal', () => {
+            const iframe = modal.querySelector('iframe');
+            if (iframe) {
+                const src = iframe.src;
+                iframe.src = src; // Detener el video
+            }
+        });
+    });
 }
 
 // --- NUEVO ---
