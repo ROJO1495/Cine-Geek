@@ -99,7 +99,6 @@ function centerCarouselControls() {
     }
 }
 
-// Cargar la seccion "inicio" automaticamente al abrir index.html
 document.addEventListener("DOMContentLoaded", () => {
     loadSection('inicio');
 });

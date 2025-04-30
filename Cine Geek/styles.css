@@ -21,12 +21,74 @@ body {
 }
 
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/banner.jpg') no-repeat center center/cover;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('images/banner1.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 150px 20px;
-    background-size: cover;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    animation: fadeBanner 72s infinite;
+    will-change: background-image;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at center, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        transparent 70%
+    );
+    animation: projectorLight 15s infinite alternate;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes projectorLight {
+    0% { transform: translate(0%, 0%); }
+    25% { transform: translate(20%, 30%); }
+    50% { transform: translate(-10%, 15%); }
+    75% { transform: translate(25%, -5%); }
+    100% { transform: translate(-15%, 20%); }
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes fadeBanner {
+    0%, 3.125% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner1.jpg'); }
+    4.166%, 7.291% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula1.jpg'); }
+    8.333%, 11.458% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula2.jpg'); }
+    12.5%, 15.625% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion1.jpg'); }
+    16.666%, 19.791% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula3.jpg'); }
+    20.833%, 23.958% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula4.jpg'); }
+    25%, 28.125% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion2.jpg'); }
+    29.166%, 32.291% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula5.jpg'); }
+    33.333%, 36.458% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula6.jpg'); }
+    37.5%, 40.625% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion3.jpg'); }
+    41.666%, 44.791% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula7.jpg'); }
+    45.833%, 48.958% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula8.jpg'); }
+    50%, 53.125% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion4.jpg'); }
+    54.166%, 57.291% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula9.jpg'); }
+    58.333%, 61.458% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula10.jpg'); }
+    62.5%, 65.625% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion5.jpg'); }
+    66.666%, 69.791% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula11.jpg'); }
+    70.833%, 73.958% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula12.jpg'); }
+    75%, 78.125% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/promocion6.jpg'); }
+    79.166%, 82.291% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula13.jpg'); }
+    83.333%, 86.458% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula14.jpg'); }
+    87.5%, 90.625% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Promocion7.jpg'); }
+    91.666%, 94.791% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula15.jpg'); }
+    95.833%, 98.958% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/Pelicula16.jpg'); }
+    100% { background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/banner1.jpg'); }
 }
 
 .banner-logo {
