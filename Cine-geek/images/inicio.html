@@ -1,0 +1,298 @@
+<!-- Sección Inicio -->
+<section id="inicio" class="container-fluid mt-5 pt-5">
+
+    <div class="titulo-estrenos-wrapper">
+        <div class="icono-circulo">
+            <i class="bi bi-film"></i> 🎬
+        </div>
+        <h2 class="titulo-estrenos">
+            Estrenos de Hoy: <span id="fecha-estrenos"></span>
+        </h2>
+    </div>
+
+    <!-- Carrusel de estrenos (dezlizo) -->
+    <div id="carouselEstrenos" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+                    <!-- Primera Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/elcontador.jpg" class="card-img-top" alt="El contador 2">
+                            <div class="card-body">
+                                <h5 class="card-title">El Contador 2</h5>
+                                <p class="card-text">10:00 AM - 01:00 PM - 6:00 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalContador2">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segunda Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/starwars.jpg" class="card-img-top" alt="Star Wars 3: Venganza Sith">
+                            <div class="card-body">
+                                <h5 class="card-title">Star Wars 3: Venganza Sith</h5>
+                                <p class="card-text">09:00 AM - 12:00 MD - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalStarWars3">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tercera Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/pecadores.jpg" class="card-img-top" alt="Pecadores">
+                            <div class="card-body">
+                                <h5 class="card-title">Pecadores</h5>
+                                <p class="card-text">11:00 AM - 03:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalPecadores">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+                    <!-- Cuarta Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/karatekidleyendas.jpg" class="card-img-top" alt="Karate Kid Leyendas">
+                            <div class="card-body">
+                                <h5 class="card-title">Karate Kid Leyendas</h5>
+                                <p class="card-text">10:00 AM - 02:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalKarateKid">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quinta Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/comunidaddiabolica.jpg" class="card-img-top" alt="Comunidad diabólica">
+                            <div class="card-body">
+                                <h5 class="card-title">Comunidad diabólica</h5>
+                                <p class="card-text">10:30 AM - 04:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalcomunidaddiabolica">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sexta Pelicula -->
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/minecraftpelicula.jpg" class="card-img-top"
+                                alt="Una película de Minecraft">
+                            <div class="card-body">
+                                <h5 class="card-title">Una película de Minecraft</h5>
+                                <p class="card-text">08:00 AM - 11:00 AM - 03:00 PM - 8:30 PM</p>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#modalminecraftpelicula">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Espacios vacios para ajustar 3 columnas por slide -->
+                    <div class="col"></div>
+                    <div class="col"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles de navegacion -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselEstrenos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+</section>
+
+<!-- Modales -->
+<div class="modal fade" id="modalContador2" tabindex="-1" aria-labelledby="modalContador2Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalContador2Label">El Contador 2</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/iiVxRG8xDDc"
+                            title="Trailer El Contador 2"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Acción / Thriller</p>
+                <p><strong>Duración:</strong> 2h 5min</p>
+                <p><strong>Clasificación:</strong> B15</p>
+                <p><strong>Director:</strong> Gavin O'Connor</p>
+                <p><strong>Elenco:</strong> Ben Affleck, Jon Bernthal, J.K. Simmons, Cynthia Addai-Robinson, Jean Smart y Alison Wright</p>
+                <p><strong>Sinopsis:</strong> Christian Wolff regresa enfrentando una nueva conspiración de traición y
+                    corrupción mientras lucha por proteger a su familia.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalStarWars3" tabindex="-1" aria-labelledby="modalStarWars3Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalStarWars3Label">Star Wars 3: Venganza Sith</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/HdcpqOxxkOc"
+                            title="Trailer Star Wars 3"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Ciencia ficción / Acción</p>
+                <p><strong>Duración:</strong> 2h 20min</p>
+                <p><strong>Clasificación:</strong> B</p>
+                <p><strong>Director:</strong> George Lucas</p>
+                <p><strong>Elenco:</strong> Ewan McGregor, Hayden Christensen, Natalie Portman, Ian McDiarmid, Samuel L. Jackson, Christopher Lee, Frank Oz y Jimmy Smits</p>
+                <p><strong>Sinopsis:</strong> La caída de Anakin Skywalker hacia el lado oscuro y el ascenso del Imperio
+                    Galáctico culminan en una de las batallas más épicas de la saga.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalPecadores" tabindex="-1" aria-labelledby="modalPecadoresLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPecadoresLabel">Pecadores</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/bAkWFyEEYSI"
+                            title="Trailer Pecadores"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Drama / Suspenso</p>
+                <p><strong>Duración:</strong> 1h 55min</p>
+                <p><strong>Clasificación:</strong> C</p>
+                <p><strong>Director:</strong> David Pablos</p>
+                <p><strong>Elenco:</strong> Diego Boneta, Aislinn Derbez, Manolo Cardona, Joaquín Cosío, Irene Azuela y Alfonso Dosal</p>
+                <p><strong>Sinopsis:</strong> Una intensa historia sobre la redención y los secretos ocultos de una
+                    pequeña comunidad religiosa en conflicto.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalKarateKid" tabindex="-1" aria-labelledby="modalKarateKidLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalKarateKidLabel">Karate Kid Leyendas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/ZWoFMg7XVHA"
+                            title="Trailer Karate Kid: Leyendas"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Aventura / Deporte</p>
+                <p><strong>Duración:</strong> 2h 10min</p>
+                <p><strong>Clasificación:</strong> A</p>
+                <p><strong>Director:</strong> Jonathan Entwistle</p>
+                <p><strong>Elenco:</strong> Jackie Chan, Ralph Macchio, Ben Wang, Sadie Stanley, Joshua Jackson y Ming-Na Wen</p>
+                <p><strong>Sinopsis:</strong> Una nueva generación de luchadores aprende sobre disciplina, honor y
+                    valor, mientras enfrenta nuevos desafíos en torneos de karate internacionales.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalcomunidaddiabolica" tabindex="-1" aria-labelledby="modalcomunidaddiabolicaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalcomunidaddiabolica">Comunidad diabólica</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/GzJsWbajDuM"
+                            title="Trailer Comunidad diabolica"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Suspenso</p>
+                <p><strong>Duración:</strong> 1h 39min</p>
+                <p><strong>Clasificación:</strong> B15</p>
+                <p><strong>Director:</strong> Daniel de la Vega</p>
+                <p><strong>Elenco:</strong> Florencia Raggi, Esteban Lamothe, Juan Minujín, Laura Laprida, Luis Ziembrowski y Mirella Pascual</p>
+                <p><strong>Sinopsis:</strong> El cadete de West Point, Edgar Allan Poe, y otros cuatro cadetes en un
+                    ejercicio de entrenamiento en el norte del estado de Nueva York, son atraídos por un espantoso
+                    descubrimiento a una comunidad olvidada.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalminecraftpelicula" tabindex="-1" aria-labelledby="modalminecraftpeliculaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalminecraftpelicula">Una película de Minecraft</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9 mb-4">
+                    <iframe src="https://www.youtube.com/embed/bwAbeOvpfq0"
+                            title="Trailer Una pelicula de Minecraft"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <p><strong>Género:</strong> Aventura</p>
+                <p><strong>Duración:</strong> 1h 41min</p>
+                <p><strong>Clasificación:</strong> A</p>
+                <p><strong>Director:</strong> Jared Hess (Napoleon Dynamite)</p>
+                <p><strong>Elenco:</strong> Jason Momoa, Danielle Brooks, Sebastian Eugene Hansen, Emma Myers, Matt Berry y Jennifer Coolidge</p>
+                <p><strong>Sinopsis:</strong> ¡Bienvenido al mundo de Minecraft, donde la creatividad no solo te ayuda a
+                    construir, sino que es esencial para sobrevivir! Cuatro inadaptados, Garrett “El Recolector”
+                    Garrison (Momoa), Henry (Hansen), Natalie (Myers) y Dawn (Brooks), se encuentran lidiando con
+                    problemas cotidianos cuando, de repente, son arrastrados a través de un portal misterioso hacia el
+                    Overworld: una extraña tierra cúbica que se nutre de la imaginación. Para regresar a casa, deberán
+                    dominar este mundo (y protegerlo de criaturas malignas como Piglins y Zombis) mientras emprenden una
+                    mágica aventura con un experto constructor, Steve (Black). Juntos, su aventura los desafiará a ser
+                    valientes y a reconectar con las cualidades que los hacen creativamente únicos, habilidades
+                    esenciales para prosperar en el mundo real.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
