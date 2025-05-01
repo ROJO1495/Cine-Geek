@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cinema Geek</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles.css">
+        <script defer src="script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    </head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html" onclick="loadSection('inicio')">
+                <img src="../images/logo.png" alt="logo-home" width="50" class="d-inline-block align-text-top me-2">
+                <span class="d-inline-block align-text-top mt-1">Cinema Geek</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html" onclick="loadSection('inicio')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../historia.html" onclick="loadSection('historia')">Historia</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../cartelera.html" onclick="loadSection('cartelera')">Cartelera</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../proximamente.html" onclick="loadSection('proximamente')">Próximos
+                            estrenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../promociones.html"
+                            onclick="loadSection('promociones')">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../dulceria.html" onclick="loadSection('dulceria')">Dulcería</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="../contacto.html" onclick="loadSection('contacto')">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Buscador -->
+    <section class="search-input container-fluid py-3">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form class="d-flex">
+                        <input class="form-control form-control-md me-2" type="search" placeholder="Busca otra pelicula..." aria-label="Buscar">
+                        <button class="btn btn-primary btn-md" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de detalles de película -->
+    <section class=" bg-dark py-4 position-data">
+        <div class="container text-light">
+            <div class="row align-items-center">
+                <!-- Imagen de la película -->
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="../images/Movies/movie7.jpg" alt="Poster de la película" class="img-fluid rounded shadow">
+                </div>
+
+                <!-- Información de la película -->
+                <div class="col-lg-7">
+                    <h2 class="mb-3">Jurassic Park</h2>
+                    <ul class="list-unstyled mb-4">
+                        <li><strong>Año de estreno:</strong> 1993 | 2h 7min</li>
+                        <li><strong>Puntuación:</strong> ⭐ 8.2/10</li>
+                        <li><strong>Género:</strong> Aventura, Ciencia Ficción, Thriller</li>
+                        <li><strong>Clasificación:</strong> Mayores de 10 años</li>
+                        <li><strong>Director:</strong> Steven Spielberg</li>
+                        <li><strong>Elenco:</strong> Sam Neill, Laura Dern, Jeff Goldblum, Richard Attenborough</li>
+                        <li><strong>Horarios:</strong> Martes 9: 10 AM | Jueves 2: 30 PM | Domingo 9: 00 PM</li>
+                    </ul>
+                    <h5>Sinopsis</h5>
+                    <p class="text-light">
+                        Un parque temático con dinosaurios clonados se convierte en un caos cuando las criaturas escapan y amenazan a los visitantes.
+                    </p>
+
+                    <!-- Botón para ver tráiler -->
+                    <a href="#trailer" class="btn btn-danger mt-3">Ver Tráiler</a>
+                    <a href="#" class="btn btn-secondary mt-3">Boleto: $ 3.00 - | 2D |</a>
+                    <a href="#" class="btn btn-success mt-3">Boleto: $ 6.00 - | 3D |</a>
+                    <a href="../cartelera.html" class="btn btn-warning mt-3">Cartelera</a>
+                </div>
+            </div>
+
+            <!-- Trailer de la película -->
+            <div class="row mt-5" id="trailer">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Tráiler Oficial</h3>
+                    <div class="ratio ratio-16x9">
+                        <iframe width="853" height="480" src="https://www.youtube.com/embed/dLDkNge_AhE" title="Jurassic Park (1993) | Trailer restaurado en español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <div class="footer-icons">
+                <a href="#"><img src="../images/facebookicon.png" alt="Facebook"></a>
+                <a href="#"><img src="../images/instagramicon.png" alt="Instagram"></a>
+                <a href="#"><img src="../images/tiktokicon.png" alt="TikTok"></a>
+                <a href="#"><img src="../images/youtubeicon.png" alt="YouTube"></a>
+            </div>
+            <p class="mt-3">Métodos de pago aceptados:</p>
+            <div class="footer-icons">
+                <img src="../images/visaicon.png" alt="Visa">
+                <img src="../images/mastercardicon.png" alt="MasterCard">
+                <img src="../images/paypalicon.png" alt="PayPal">
+                <img src="../images/efectivoicon.png" alt="Efectivo">
+            </div>
+            <p class="mt-3">&copy; 2025 Cinema Geek - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
