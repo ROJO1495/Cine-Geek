@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema Geek</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" onclick="loadSection('inicio')">
+                <img src="images/logo.png" alt="logo-home" width="50" class="d-inline-block align-text-top me-2">
+                <span class="d-inline-block align-text-top mt-1">Cinema Geek</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" onclick="loadSection('inicio')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html" onclick="loadSection('historia')">Historia</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cartelera.html" onclick="loadSection('cartelera')">Cartelera</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="proximamente.html" onclick="loadSection('proximamente')">Próximos
+                            estrenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promociones.html"
+                            onclick="loadSection('promociones')">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dulceria.html" onclick="loadSection('dulceria')">Dulcería</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html" onclick="loadSection('contacto')">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Proximos estrenos -->
+    <section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="text-center mb-5">Proximos estrenos</h1>
+        <p class="text-center mb-5">¡Fechas sujetas a cambios, y disponibilidad en cines a confirmar en su día de estreno!</p>
+            <div id="estrenos-hoy" class="container">
+            <div class="row justify-content-center g-4">
+                <!-- Película 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno1.jpeg" class="card-img-top" alt="Lilo y Stitch">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lilo y Stitch</h5>
+                            <p class="card-text">23 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLiloyStitch">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Película 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno2.jpeg" alt="Como Entrenar a Tu Dragón">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Como Entrenar a Tu Dragón</h5>
+                            <p class="card-text">13 JUN. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalComoEntrenarATudragon">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Película 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno3.jpeg" class="card-img-top" alt="Bailarina">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bailarina</h5>
+                            <p class="card-text">05 JUN. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBailarina">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Película 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno4.jpg" class="card-img-top" alt="Destino Final: Lazos de Sangre">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Destino Final: Lazos de Sangre</h5>
+                            <p class="card-text">16 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDestinoFinal">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno5.jpg" class="card-img-top" alt="Cuando El Demonio Llama">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cuando El Demonio Llama</h5>
+                            <p class="card-text">27 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDemonio">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno6.jpg" class="card-img-top" alt="Loco Por Ella">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Loco Por Ella</h5>
+                            <p class="card-text">10 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLocoPorElla">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 7 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno7.jpg" class="card-img-top" alt="Mensaje En Una Botella">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mensaje En Una Botella</h5>
+                            <p class="card-text">30 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalBotella">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 8 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno8.jpg" class="card-img-top" alt="Thunderbolts">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Thunderbolts</h5>
+                            <p class="card-text">31 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalThunder">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 9 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno9.jpg" class="card-img-top" alt="El Dorado">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">El Dorado</h5>
+                            <p class="card-text">31 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDorado">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 10 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno10.jpg" class="card-img-top" alt="La Noche De Los Hombres Lobo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Puente En Llamas</h5>
+                            <p class="card-text">31 MAY. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLlamas">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 11 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno11.jpeg" class="card-img-top" alt="Atlantis">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Atlantis: El Imperio Perdido</h5>
+                            <p class="card-text">01 JUN. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAtlantis">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Película 12 -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="images/estreno12.jpg" class="card-img-top" alt="Planeta Del Tesoro">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Planeta Del Tesoro</h5>
+                            <p class="card-text">04 JUN. 2025</p>
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTesoro">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Modales -->
+        <div class="modal fade" id="modalLiloyStitch" tabindex="-1" aria-labelledby="modalContador2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalContador2Label">Lilo y Stitch</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/9JIyINjMfcc?si=AHTQucNukMLntgj9"
+                                title="Trailer Lilo y Stitch"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Comedia</p>
+                        <p><strong>Duración:</strong> 1h 50min</p>
+                        <p><strong>Clasificación:</strong> TBC</p>
+                        <p><strong>Director:</strong> Dean Fleischer Camp</p>
+                        <p><strong>Elenco:</strong> Sydney Agudong, Maia Kealoha, Kahiau Machado, Courtney B. Vance, Amy Hill, Tia Carrere y Zach Galifianakis</p>
+                        <p><strong>Sinopsis:</strong> LILO Y STITCH es la conmovedora y divertidisima historia de una nina hawaiana y el alienigena fugitivo que la ayuda a reconstruir su familia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalComoEntrenarATudragon" tabindex="-1" aria-labelledby="modalStarWars3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalStarWars3Label">Como Entrenar a Tu Dragón</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/liGB1ssYn38?si=3kGjdzki0ph3riZO"
+                                title="Trailer Como Entrenar a Tu Dragón"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Acción</p>
+                        <p><strong>Duración:</strong> 2h 00min</p>
+                        <p><strong>Clasificación:</strong> TBC</p>
+                        <p><strong>Director:</strong> Dean DeBlois</p>
+                        <p><strong>Elenco:</strong> Mason Thames, Nico Parker, Gerard Butler, Nick Frost, Julian Dennison, Gabriel Howell y la actriz catalana Bruna González</p>
+                        <p><strong>Sinopsis:</strong> Un joven vikingo aspira a cazar dragones, pero se convierte inesperadamente en amigo de un joven dragon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalBailarina" tabindex="-1" aria-labelledby="modalPecadoresLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPecadoresLabel">Bailarina</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/iS6CdinpJew?si=Sv_aPMpxuMysk8z6"
+                                title="Trailer Bailarina"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Suspenso</p>
+                        <p><strong>Duración:</strong> 1h 30min</p>
+                        <p><strong>Clasificación:</strong> TBC</p>
+                        <p><strong>Director:</strong> Len Wiseman</p>
+                        <p><strong>Elenco:</strong> Ana de Armas, Keanu Reeves, Ian McShane, Lance Reddick, Anjelica Huston, Gabriel Byrne y Catalina Sandino Moreno</p>
+                        <p><strong>Sinopsis:</strong> Ambientada durante los acontecimientos de John Wick Chapter 3 Parabellum, la pelicula sigue a Eve Macarro, una asesina en formacion que se adentra en las implacables tradiciones mortales de los Ruska Roma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDestinoFinal" tabindex="-1" aria-labelledby="modalKarateKidLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalKarateKidLabel">Destino Final: Lazos de Sangre</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/8FudANSsWNQ?si=6QqUjTpicmrlJGfu"
+                                title="Trailer Destino Final: Lazos de Sangre"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Terror</p>
+                        <p><strong>Duración:</strong> 1h 50min</p>
+                        <p><strong>Clasificación:</strong> TBC</p>
+                        <p><strong>Director:</strong> Zach Lipovsky</p>
+                        <p><strong>Elenco:</strong> Brendan Meyer, Teo Briones, Kaitlyn Santa Juana, Richard Harmon, Alisha Boe, Henry Zaga y Anna Lore</p>
+                        <p><strong>Sinopsis:</strong> A medida que un grupo de socorristas escapan de las garras de la muerte, empiezan a ser asesinados por percances cada vez mas improbables y asesinos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -->
+        <div class="modal fade" id="modalDemonio" tabindex="-1" aria-labelledby="modalContador2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalContador2Label">Cuando El Demonio Llama</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/rIFOw1L0q7Q?si=-RTEAHxxYdWvTtEU"
+                                title="Trailer Cuando El Demonio Llama"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Terror</p>
+                        <p><strong>Duración:</strong> 1h 20min</p>
+                        <p><strong>Clasificación:</strong> C</p>
+                        <p><strong>Director:</strong> Scott Derrickson</p>
+                        <p><strong>Elenco:</strong> Mason Thames, Madeleine McGraw, Jeremy Davies, Ethan Hawke, E. Roger Mitchell, Troy Rudeseal y Rebecca Clarke</p>
+                        <p><strong>Sinopsis:</strong> La historia de David, en un esfuerzo por salvar a su esposa poseida Anna. La unica esperanza que tiene el equipo de exorcistas para salvar a una mujer poseida es descubrir el nombre del demonio que la ha poseido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLocoPorElla" tabindex="-1" aria-labelledby="modalStarWars3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalStarWars3Label">Loco Por Ella</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/BD_KhNipZmA?si=o5sknE2-eJAD0sBe"
+                                title="Trailer Loco Por Ella"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Comedia</p>
+                        <p><strong>Duración:</strong> 1h 30min</p>
+                        <p><strong>Clasificación:</strong> C</p>
+                        <p><strong>Director:</strong> Dani de la Orden</p>
+                        <p><strong>Elenco:</strong> Álvaro Cervantes, Susana Abaitua, Luis Zahera, Gorka Otxoa, Aixa Villagrán, Ramón Barea y Itziar Lazkano</p>
+                        <p><strong>Sinopsis:</strong> Alvaro se enamora perdidamente de Carla, una chica bipolar que termina internada en una clinica mental. Alvaro, quien suele ser super positivo, entra al hospital con la esperanza de sacar a Carla de ahi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalBotella" tabindex="-1" aria-labelledby="modalPecadoresLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPecadoresLabel">Mensaje En Una Botella</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/CRFCxTh5yZU?si=jRs3yHvsUA6FLXFc"
+                                title="Trailer Mensaje En Una Botella"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Comedia</p>
+                        <p><strong>Duración:</strong> 2h 10min</p>
+                        <p><strong>Clasificación:</strong> B</p>
+                        <p><strong>Director:</strong> Luis Mandoki</p>
+                        <p><strong>Elenco:</strong> Kevin Costner, Robin Wright, Paul Newman, John Savage, Illeana Douglas y Robbie Coltrane</p>
+                        <p><strong>Sinopsis:</strong> Una sommelier descubre un metodo para enviarse mensajes al pasado con el fin de modificar algunas malas decisiones que tomo anios atras. Pero los mensajes no hacen mas que complicar su presente y modificar las vidas de todos a su alrededor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalThunder" tabindex="-1" aria-labelledby="modalKarateKidLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalKarateKidLabel">Thunderbolts</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/TseBlCmwFLc?si=Qy6hXyMMLz5JIYvc"
+                                title="Trailer Thunderbolts"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Acción</p>
+                        <p><strong>Duración:</strong> 2h 10min</p>
+                        <p><strong>Clasificación:</strong> C</p>
+                        <p><strong>Director:</strong> Jake Schreier</p>
+                        <p><strong>Elenco:</strong> Florence Pugh, Sebastian Stan, Wyatt Russell, Julia Louis-Dreyfus, David Harbour, Hannah John-Kamen, Olga Kurylenko y Harrison Ford</p>
+                        <p><strong>Sinopsis:</strong> Un grupo de supervillanos son reclutados para realizar misiones para el gobierno.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- -->
+        <div class="modal fade" id="modalDorado" tabindex="-1" aria-labelledby="modalContador2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalContador2Label">El Dorado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/mLsBB-MlNjA?si=oorb-kKxNmkhgHXJ"
+                                title="Trailer El Dorado"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Aventura/Comedia</p>
+                        <p><strong>Duración:</strong> 1h 29min</p>
+                        <p><strong>Clasificación:</strong> A</p>
+                        <p><strong>Director:</strong> Bibo Bergeron (codirigida por Don Paul y Jeffrey Katzenberg como productor ejecutivo)</p>
+                        <p><strong>Elenco:</strong> Kevin Kline, Kenneth Branagh, Rosie Perez, Armand Assante, Edward James Olmos y Frank Welker</p>
+                        <p><strong>Sinopsis:</strong> La historia trata sobre dos estafadores que consiguen un mapa de la legendaria ciudad de oro, El Dorado, mientras llevan a cabo una especie de estafa. Su plan fracasa y los pícaros terminan perdidos en el mar tras varias desgracias. Curiosamente, acaban en las costas de El Dorado, donde los nativos los veneran por su apariencia extranjera.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalLlamas" tabindex="-1" aria-labelledby="modalStarWars3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalStarWars3Label">Puente En Llamas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/LFuQ04TNLBw?si=h9K3DfAjOwZD2gTx"
+                                title="Trailer Puente En Llamas"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Acción</p>
+                        <p><strong>Duración:</strong> 1h 40min</p>
+                        <p><strong>Clasificación:</strong> C</p>
+                        <p><strong>Director:</strong> Guy Ritchie</p>
+                        <p><strong>Elenco:</strong> Henry Cavill, Eiza González, Alan Ritchson, Alex Pettyfer, Hero Fiennes Tiffin, Babs Olusanmokun y Til Schweiger</p>
+                        <p><strong>Sinopsis:</strong> Un veterano con trastorno de estres postraumatico queda atrapado con su hermana cuando exmilitares armados toman rehenes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalAtlantis" tabindex="-1" aria-labelledby="modalPecadoresLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPecadoresLabel">Atlantis: El Imperio Perdido</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/r39ys9K3LgA?si=ppvy2ttkVQ9o-nE5"
+                                title="Trailer Atlantis: El Imperio Perdido"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Aventura</p>
+                        <p><strong>Duración:</strong> 1h 35min</p>
+                        <p><strong>Clasificación:</strong> A</p>
+                        <p><strong>Director:</strong> Gary Trousdale y Kirk Wise (codirección)</p>
+                        <p><strong>Elenco:</strong> Michael J. Fox, Cree Summer, James Garner, Leonard Nimoy, Don Novello, Claudia Christian y Jacqueline Obradors</p>
+                        <p><strong>Sinopsis:</strong> El joven aventurero Milo Thatch se une a un intrépido grupo de exploradores para encontrar el misterioso continente perdido de Atlantis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTesoro" tabindex="-1" aria-labelledby="modalKarateKidLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalKarateKidLabel">Planeta Del Tesoro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.youtube.com/embed/DGd3rhMpZRk?si=MIdyyqFNibypmZmW"
+                                title="Trailer Planeta Del Tesoro"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <p><strong>Género:</strong> Aventura</p>
+                        <p><strong>Duración:</strong> 1h 35min</p>
+                        <p><strong>Clasificación:</strong> AA</p>
+                        <p><strong>Director:</strong> Ron Clements y John Musker (codirección)</p>
+                        <p><strong>Elenco:</strong> Joseph Gordon-Levitt, Brian Murray, Emma Thompson, David Hyde Pierce, Martin Short, Roscoe Lee Browne y Patrick McGoohan</p>
+                        <p><strong>Sinopsis:</strong> Jim Hawkins, un chico rebelde a quien siempre le han apasionado las historias de piratas, compite por encontrar un tesoro en el espacio exterior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

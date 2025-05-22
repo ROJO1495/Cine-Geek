@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cinema Geek</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" onclick="loadSection('inicio')">
+                <img src="images/logo.png" alt="logo-home" width="50" class="d-inline-block align-text-top me-2">
+                <span class="d-inline-block align-text-top mt-1">Cinema Geek</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" onclick="loadSection('inicio')">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historia.html" onclick="loadSection('historia')">Historia</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cartelera.html" onclick="loadSection('cartelera')">Cartelera</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="proximamente.html" onclick="loadSection('proximamente')">Próximos
+                            estrenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="promociones.html"
+                            onclick="loadSection('promociones')">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dulceria.html" onclick="loadSection('dulceria')">Dulcería</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html" onclick="loadSection('contacto')">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Promociones -->
+        <section id="dulceria" class="container mt-5 pt-5">
+            <h1 class="text-center mb-5">Promociones</h1>
+
+            <div class="row g-4">
+
+                <!-- Producto 1 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion1.jpg" class="img-fluid rounded-start" alt="Combo Personal">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Promoción Premier</h5>
+                                    <p class="card-text">$7.99</p>
+                                    <p class="card-text"><small class="text-muted">Entrada + Popcorn grande + Soda 32 oz</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion2.jpg" class="img-fluid rounded-start" alt="Combo Cuates">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Doble Diversión</h5>
+                                    <p class="card-text">$14.99</p>
+                                    <p class="card-text"><small class="text-muted">2 entradas + 2 combos personales + 2 chocolates gratis</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion3.jpg" class="img-fluid rounded-start" alt="Combo Nachos Pareja">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tarde Geek</h5>
+                                    <p class="card-text">$5.50</p>
+                                    <p class="card-text"><small class="text-muted">Nachos + Refresco + Galleta temática</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion4.jpg" class="img-fluid rounded-start" alt="Combo Hot dog en Pareja">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Noche de Estreno</h5>
+                                    <p class="card-text">$6.00</p>
+                                    <p class="card-text"><small class="text-muted">Entrada + 2x1 en Hot dogs o Nachos</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion5.jpg" class="img-fluid rounded-start" alt="Maxicombo">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Merienda Geek</h5>
+                                    <p class="card-text">$3.99</p>
+                                    <p class="card-text"><small class="text-muted">Pack de Dulces + Bebida</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion6.jpg" class="img-fluid rounded-start" alt="Combo Magnum">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fan Pack Especial</h5>
+                                    <p class="card-text">$3.99 (después del descuento)</p>
+                                    <p class="card-text"><small class="text-muted">50% de descuento en entrada + dulcería (aplicable solo si se viene disfrazado)</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/promocion7.jpg" class="img-fluid rounded-start" alt="Combo Icee">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Promoción Familiar</h5>
+                                    <p class="card-text">$28.99</p>
+                                    <p class="card-text"><small class="text-muted">4 entradas + Mega popcorn + 4 sodas medianas + Dulces surtidos</small></p>
+                                    <a href="#" class="btn btn-primary">Agregar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
